@@ -1,0 +1,34 @@
+Final Report on Healthcare Data Cleaning Project
+Project Overview:
+
+This project involved the cleaning and preprocessing of healthcare datasets related to breast cancer diagnoses. The main objectives were to handle missing values, ensure correct data types, and engineer new features to enhance the datasets' usability for analysis or predictive modeling.
+
+Steps Undertaken:
+
+Data Loading:
+
+The datasets train_clean.csv and test_clean.csv were loaded into pandas DataFrames.
+Initial inspection showed that the training dataset contained 12906 records and 113 columns, while the testing dataset contained 5792 records and 112 columns.
+Data Inspection:
+
+The head of each DataFrame was printed to observe the first few records.
+Information about each DataFrame was displayed, including data types and the presence of null values.
+Data Cleaning:
+
+Rows with missing values were dropped from both datasets.
+Columns representing dates (Admission Date and Discharge Date) were converted to datetime objects where applicable.
+Feature Engineering:
+
+A new feature, Length of Stay, was calculated for both datasets by subtracting the Admission Date from the Discharge Date.
+This feature provides the number of days each patient stayed in the hospital, a valuable metric for further analysis.
+Data Saving:
+
+The cleaned and processed datasets were saved to new CSV files: cleaned_train_healthcare_data.csv and cleaned_test_healthcare_data.csv.
+Results:
+
+The cleaning process successfully handled missing values and ensured that date columns were correctly formatted.
+The new Length of Stay feature was added to both datasets, enriching the information available for analysis.
+The cleaned datasets are now more consistent and ready for use in any downstream tasks such as exploratory data analysis, statistical analysis, or machine learning.
+Conclusion:
+
+The data cleaning and preprocessing steps undertaken in this project have significantly improved the quality of the healthcare datasets. The cleaned data is now well-prepared for further analysis, which can lead to insights into patient care and outcomes related to breast cancer. Future work could include exploratory data analysis, predictive modeling, and hypothesis testing to leverage the prepared datasets effectively.

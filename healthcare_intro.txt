@@ -1,0 +1,24 @@
+Introduction to the Dataset
+The dataset utilized in this project pertains to healthcare data, specifically focusing on patient information related to breast cancer diagnosis. The data has been split into two parts: a training dataset and a testing dataset. The training dataset consists of 12906 records and 113 columns, while the testing dataset contains 5792 records and 112 columns. The datasets include a variety of attributes such as patient ID, state, ZIP code, age, diagnosis codes, and numerous other medical indicators and measurements.
+
+Training Dataset:
+
+Number of Records: 12906
+Number of Columns: 113
+Testing Dataset:
+
+Number of Records: 5792
+Number of Columns: 112
+The columns include various data types such as integers, floats, and objects (strings). The training dataset additionally includes a column DiagPeriodL90D that is not present in the testing dataset.
+
+Project Description
+The goal of this project is to clean and preprocess the healthcare datasets to ensure they are ready for further analysis or machine learning model training. The preprocessing steps involve removing rows with missing values and converting specific columns to appropriate data types. Additionally, we calculate a new feature, the length of hospital stay, based on the admission and discharge dates.
+
+The project follows these key steps:
+
+Data Loading: Read the training and testing datasets from CSV files.
+Data Inspection: Inspect the first few rows and overall structure of the datasets.
+Data Cleaning: Remove rows with missing values and convert date columns to datetime objects.
+Feature Engineering: Calculate the length of stay for each patient.
+Data Saving: Save the cleaned and processed datasets to new CSV files for future use.
+This data preparation is crucial for any subsequent analysis or machine learning tasks, ensuring the datasets are consistent, clean, and include all necessary features.
